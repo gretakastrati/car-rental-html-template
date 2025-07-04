@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Greta Rent</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+     <link rel="icon" type="image/x-icon" href="./img/car-rent-1.png">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+   <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
+        <div class="row">
+            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body pr-3" href=""><i class="fa fa-phone-alt mr-2"></i>+383 043 727 640</a>
+                    <span class="text-body">|</span>
+                    <a class="text-body px-3" href=""><i class="fa fa-envelope mr-2"></i>kastratigreta1@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-body pl-3" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="position-relative px-lg-5" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="./index.html" class="navbar-brand">
+                    <h1 class="text-uppercase text-primary mb-1">Greta Rent</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="car.html" class="nav-item nav-link">Car Listing</a>
+                        
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="team.html" class="dropdown-item">The Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Search Start -->
+    <div class="container-fluid bg-white pt-3 px-lg-5">
+  <div class="row mx-n2">
+
+    <!-- Pickup Location -->
+    <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+      <label for="pickup-location">Pickup Location</label>
+      <select id="pickup-location" class="custom-select px-4 mb-3" style="height: 50px;">
+        <option selected disabled>Pickup Location</option>
+        <option value="Podujeve">Podujeve</option>
+        <option value="Prishtine">Prishtine</option>
+        <option value="Prizren">Prizren</option>
+      </select>
+    </div>
+
+    <!-- Drop Location -->
+    <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+      <label for="drop-location">Drop Location</label>
+      <select id="drop-location" class="custom-select px-4 mb-3" style="height: 50px;">
+        <option selected disabled>Drop Location</option>
+        <option value="Podujeve">Podujeve</option>
+        <option value="Prishtine">Prishtine</option>
+        <option value="Prizren">Prizren</option>
+      </select>
+    </div>
+
+    <!-- Pickup Date -->
+    <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+      <label for="pickup-date">Pickup Date</label>
+      <input id="pickup-date" type="datetime-local" class="form-control p-2 mb-3" style="height: 50px" />
+    </div>
+
+    <!-- Return Date -->
+    <div class="col-xl-2 col-lg-4 col-md-6 px-12">
+      <label for="return-date">Return Date</label>
+      <input id="return-date" type="datetime-local" class="form-control p-2 mb-3" style="height: 50px" />
+    </div>
+
+    <!-- Car Selection -->
+    <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+      <label for="select-cars">Select a Car</label>
+      <select id="select-cars" class="custom-select px-4 mb-3" style="height: 50px;">
+        <option value="">Select a Car</option>
+      </select>
+    </div>
+
+    <!-- Search Button -->
+    <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+      <label class="d-block invisible">Search</label> <!-- Invisible label to align with other inputs -->
+      <button id="search-button" class="btn btn-primary btn-block mb-3" style="height: 50px;">Search</button>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Search End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header">
+        <h1 class="display-3 text-uppercase text-white mb-3">Car Detail</h1>
+        <div class="d-inline-flex text-white">
+            <h6 class="text-uppercase m-0"><a class="text-white" href="">Home</a></h6>
+            <h6 class="text-body m-0 px-3">/</h6>
+            <h6 class="text-uppercase text-body m-0">Car Detail</h6>
+        </div>
+    </div>
+    <!-- Page Header Start -->
+
+
+    <!-- Detail Start -->
+    <div class="container-fluid pt-5">
+        <div class="container pt-5">
+            <div id="car-detail-row" class="row">
+                <script>
+            const carDetailRow = document.getElementById("car-detail-row");
+                    const urlParams = new URLSearchParams(window.location.search);
+                    // Get the carId from the query parameters
+                    const carId = urlParams.get('carId');
+                    fetch(`http://127.0.0.1:7070/cars/find/${carId}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            const car = data;
+                            console.log(car);
+                            
+                        
+                              const  innerHtml = `       
+            <h1 class="display-4 text-uppercase mb-5">Mercedes Benz R3</h1>
+            <div class="row align-items-center pb-2">
+                <div class="col-lg-6 mb-4">
+                    <img class="img-fluid" src="img/bg-banner.jpg" alt="">
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h4 class="mb-2">$99.00/Day</h4>
+                    <div class="d-flex mb-3">
+                        <h6 class="mr-2">Rating:</h6>
+                        <div class="d-flex align-items-center justify-content-center mb-1">
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star text-primary mr-1"></small>
+                            <small class="fa fa-star-half-alt text-primary mr-1"></small>
+                            <small>(250)</small>
+                        </div>
+                    </div>
+                    <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt</p>
+                    <div class="d-flex pt-1">
+                        <h6>Share on:</h6>
+                        <div class="d-inline-flex">
+                            <a class="px-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="px-2" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="px-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="px-2" href=""><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-n3 mt-lg-0 pb-4">
+                <div class="col-md-3 col-6 mb-2">
+                    <i class="fa fa-car text-primary mr-2"></i>
+                    <span>Model: 2015</span>
+                </div>
+                <div class="col-md-3 col-6 mb-2">
+                    <i class="fa fa-cogs text-primary mr-2"></i>
+                    <span>Automatic</span>
+                </div>
+                <div class="col-md-3 col-6 mb-2">
+                    <i class="fa fa-road text-primary mr-2"></i>
+                    <span>20km/liter</span>
+                </div>
+                <div class="col-md-3 col-6 mb-2">
+                    <i class="fa fa-eye text-primary mr-2"></i>
+                    <span>GPS Navigation</span>
+                </div>
+            </div>
+        </div>
+                            `;
+                            
+
+
+                            carDetailRow.innerHTML = innerHtml
+
+                        })
+                        .catch(error => {
+                            console.error("Error fetching cars:", error);
+                        });
+        </script>
+        <script>
+
+        function formatNumber(number) {
+            if (number >= 1000) {
+                return (number / 1000).toFixed(1) + 'K';  // Format to one decimal place and append 'K'
+            }
+            return number.toString();  // Return number as string if it's less than 1000
+        }
+
+        function getRandomNumber() {
+            return Math.floor(Math.random() * 6) + 1;
+        }
+
+
+        // const urlParamsForMake = new URLSearchParams(window.location.search);
+                    // Get the carId from the query parameters
+        // const make = urlParams.get('make');
+
+
+        const availableCarsElement = document.getElementById("cars-list");
+
+        fetch(`http://127.0.0.1:7070/cars/list?isAvailable=true&page=0&size=300&make=${make}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log("Fetched Data:", data);
+                let innerHtml = ``;
+
+                data.content.forEach(car => {
+                    const randomNumber = getRandomNumber();
+                    innerHtml += `
+                    <div class="rent-item">
+                        <img class="img-fluid mb-4" src="img/car-rent-${randomNumber}.png" alt="">
+                        <h4 class="text-uppercase mb-4">${car.make} ${car.model}</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>${car.year}</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>${randomNumber < 4 ? "AUTO" : "MANUAL"}</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>${formatNumber(car.kmPassed)}</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
+                    </div>
+                `;
+                });
+
+
+                availableCarsElement.innerHTML = innerHtml
+                console.log(availableCarsElement);
+            })
+            .catch(error => {
+                console.error("Error fetching cars:", error);
+            });
+    </script>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Detail End -->
+
+
+    <!-- Related Car Start -->
+    <div  class="container-fluid pb-5">
+       
+        <div  class="container pb-5">
+            <h2 class="mb-4">Related Cars</h2>
+            <div id="related-cars" class="owl-carousel related-carousel position-relative" style="padding: 0 30px;">
+                
+ 
+            </div>
+        </div>
+    </div>
+    <!-- Related Car End -->
+
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="owl-carousel vendor-carousel">
+                <div class="bg-light p-4">
+                    <img src="img/vendor-1.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-2.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-3.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-4.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-5.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-6.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-7.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-8.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-4col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>Podujeve/Lluzhan/Rr.Lisi Eminit</p>
+                <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>+383 043 727 640</p>
+                <p><i class="fa fa-envelope text-white mr-3"></i>kastratigreta1@gmail.com</p>
+                <h6 class="text-uppercase text-white py-2">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                   
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="https://facebook.com/gretakastrati"><i class="fab fa-facebook-f"></i></a>
+               
+                    <a class="btn btn-lg btn-dark btn-lg-square" href="https://instagram.com/gretaa.kastrati"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Car Gallery</h4>
+                <div class="row mx-n1">
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-1.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-2.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-3.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-4.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-5.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-6.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
+                <p class="mb-4">Sign up for our newsletter and be the first to know about exclusive deals, special offers, and updates on our car rental 
+                    services.Get the best deals straight to your inbox!
+                </p>
+                <div class="w-100 mb-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-dark border-dark" style="padding: 25px;"
+                            placeholder="Your Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary text-uppercase px-3">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+                <i>Lorem sit sed elitr sed kasd et</i>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
+        <p class="mb-2 text-center text-body">&copy; <a href="#">Greta Rent</a>. All Rights Reserved.</p>
+
+        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+        <p class="m-0 text-center text-body">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
+        <p class="m-0 text-center text-body"> <a href="https://facebook.com/pitagoraspodujeve">Akademia AS</a></p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/backend.js"></script>
+    <script>
+        const relatedCars = document.getElementById("related-cars");
+        let relatedCarsInnerHtml = "";
+        const urlParamsRelated = new URLSearchParams(window.location.search);
+                    // Get the carId from the query parameters
+                    const carIdRelated = urlParams.get('carId');
+
+        function formatNumber(number) {
+            if (number >= 1000) {
+                return (number / 1000).toFixed(1) + 'K'
+            }
+            return number.toString();
+        }
+
+        function getRandomNumber() {
+
+            return Math.floor(Math.random() * 6) + 1;
+        }
+
+        const urlParamsForMake = new URLSearchParams(window.location.search);
+        const make = urlParams.get('make');
+        
+        fetch(`http://127.0.0.1:7070/cars/list?isAvailable=true&page=0&size=300&make=${make}`)
+            .then(response => response.json())
+            .then(data => {
+                data.content.forEach(car => {
+                    if(carIdRelated != car.id) {
+                        relatedCarsInnerHtml += `
+                            <div class="rent-item">
+                                    <img class="img-fluid mb-4" src="img/car-rent-1.png" alt="">
+                                    <h4 class="text-uppercase mb-4">${car.model} ${car.make}</h4>
+                                    <div class="d-flex justify-content-center mb-4">
+                                        <div class="px-2">
+                                            <i class="fa fa-car text-primary mr-1"></i>
+                                            <span>${car.year}</span>
+                                        </div>
+                                        <div class="px-2 border-left border-right">
+                                            <i class="fa fa-cogs text-primary mr-1"></i>
+                                            <span>AUTO</span>
+                                        </div>
+                                        <div class="px-2">
+                                            <i class="fa fa-road text-primary mr-1"></i>
+                                            <span>${formatNumber(car.kmPassed)}</span>
+                                        </div>
+                                    </div>
+                                    <a  class="btn btn-primary px-3" href="./detail.html?carId=${car.id}">$50.00/Day</a>
+                                </div>
+                
+                            `;
+
+                    
+
+                        
+                    }
+
+                   
+                });
+                
+
+                
+                relatedCars.innerHTML = relatedCarsInnerHtml
+
+                $(".team-carousel, .related-carousel").owlCarousel({
+                    autoplay: true,
+                    smartSpeed: 1000,
+                    center: true,
+                    margin: 30,
+                    dots: false,
+                    loop: true,
+                    nav : true,
+                    navText : [
+                        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+                        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+                    ],
+                    responsive: {
+                        0:{
+                            items:1
+                        },
+                        576:{
+                            items:1
+                        },
+                        768:{
+                            items:2
+                        },
+                        992:{
+                            items:3
+                        }
+                    }
+                });
+
+            })
+            .catch(error => {
+                console.error("Error fetching cars:", error);
+            });
+
+    </script>
+
+    <script>
+  function formatNumber(number) {
+    return number >= 1000 ? (number / 1000).toFixed(1) + 'K' : number.toString();
+  }
+
+  function renderCars(cars) {
+    const carsContainer = document.getElementById("cars-list");
+    let innerHtml = '';
+
+    if (!cars || cars.length === 0) {
+      document.getElementById('find-cars-or-not-found').innerText = 'No cars available for this selection.';
+      carsContainer.innerHTML = ''; // clear any previous results
+      return;
+    }
+
+    cars.content.forEach(car => {
+      innerHtml += `
+        <div class="col-lg-4 col-md-6 mb-2">
+          <div class="rent-item mb-4">
+            <img class="img-fluid mb-4" style="height:160px" src="${car?.images?.[0]?.imageUrl || 'placeholder.jpg'}">
+            <h4 class="text-uppercase mb-4">${car.make} ${car.model}</h4>
+            <div class="d-flex justify-content-center mb-4">
+              <div class="px-2"><i class="fa fa-car text-primary mr-1"></i><span>${car.year}</span></div>
+              <div class="px-2 border-left border-right"><i class="fa fa-cogs text-primary mr-1"></i><span>AUTO</span></div>
+              <div class="px-2"><i class="fa fa-road text-primary mr-1"></i><span>${formatNumber(car.kmPassed)}</span></div>
+            </div>
+            <a class="btn btn-primary px-3" href="./detail.html?carId=${car.id}&make=${car.make || ''}">$${car.pricePerDay}/Day</a>
+          </div>
+        </div>`;
+    });
+
+    carsContainer.innerHTML = innerHtml;
+    document.getElementById("find-your-car").scrollIntoView({ behavior: "smooth" });
+    document.getElementById('find-cars-or-not-found').innerText = ''; // clear no results message
+  }
+
+  document.getElementById("search-button").addEventListener("click", function () {
+  let pickupLocation = document.getElementById("pickup-location").value;
+  let dropLocation = document.getElementById("drop-location").value;
+
+  if (pickupLocation == 'Pickup Location') pickupLocation = '';
+  if (dropLocation == 'Drop Location') dropLocation = '';
+
+  const pickupDateInput = document.getElementById("pickup-date")?.value || '';
+  const returnDateInput = document.getElementById("return-date")?.value || '';
+  const params = new URLSearchParams();
+
+  if (pickupDateInput) params.append('pickupDate', pickupDateInput);
+  if (returnDateInput) params.append('returnDate', returnDateInput);
+  if (pickupLocation) params.append('pickupLocation', pickupLocation);
+  if (dropLocation) params.append('dropLocation', dropLocation);
+
+  console.log(params.toString());
+  
+
+  const url = `http://127.0.0.1:7070/cars/search-available?${params.toString()}`;
+
+  fetch(url)
+    .then(response => {
+      if (!response.ok) throw new Error("Network response was not ok");
+      return response.json();
+    })
+    .then(data => renderCars(data))
+    .catch(err => {
+      document.getElementById('find-cars-or-not-found').innerText = 'Error fetching cars.';
+      console.error(err);
+    });
+});
+
+  
+  </script>
+  <script>
+    console.log(document.getElementById("check-button"), "butoni");
+    
+    document.getElementById("check-button").addEventListener("click", async function () {
+        const pickupLocation = document.getElementById("pickup-location-check").value;
+        const dropLocation = document.getElementById("drop-location-check").value;
+        const pickupDateRaw = document.getElementById("pickup-date-check").value;
+        const returnDateRaw = document.getElementById("return-date-check").value;
+        const carId = 123;
+
+        // if (!pickupDate || !returnDate || !carId) {
+        //     alert("Please fill all required fields.");
+        //     return;
+        // }
+
+        function formatLocalDateTime(dt) {
+            const date = new Date(dt);
+            const pad = num => String(num).padStart(2, '0');
+            return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
+        }
+
+        const pickupDate = formatLocalDateTime(pickupDateRaw);
+        const returnDate = formatLocalDateTime(returnDateRaw);
+
+        const queryParams = new URLSearchParams({
+            pickupDate,
+            returnDate,
+            carId: carId,
+            pickupLocation,
+            dropLocation
+        });
+
+        
+
+        try {
+            const response = await fetch(`http://127.0.0.1:7070/cars/check-availability?${queryParams.toString()}`);
+            const isAvailable = await response.json();
+
+            if (isAvailable) {
+                const bookNowBtn = document.getElementById("book-now-btn");
+                bookNowBtn.href = `booking.html?carId=${carId}`;
+                document.getElementById("book-now-container").style.display = "block";
+            } else {
+                alert("Car is not available for selected time.");
+                document.getElementById("book-now-container").style.display = "none";
+            }
+        } catch (error) {
+            console.error("Error checking availability:", error);
+            alert("Failed to check availability.");
+        }
+    });
+</script>
+</body>
+
+</html>
